@@ -60,10 +60,13 @@ bubble.addEventListener("click", () => {
   }
 });
 
-// cerrar chat
+
+  // cerrar chat
 closeBtn.addEventListener("click", () => {
   windowChat.classList.add("hidden");
+  msgBox.innerHTML = "";
 });
+
 
 // para enviar el mensajeee
 
@@ -127,4 +130,6 @@ function procesarRespuesta(texto){
 
   agregarMensaje("bot", "Aún estoy aprendiendo 🐼. Puedo ayudarte con: <br>• Qué es Next Path<br>• Cómo funciona<br>• Duración del test<br>• Descargas y precio");
 }
+
+
 }
